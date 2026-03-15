@@ -407,3 +407,22 @@ body {
   margin-bottom: 0.35rem;
   font-weight: 700;
 }
+
+.ablation-columns {
+  align-items: flex-start;
+}
+
+.ablation-subsection {
+  height: 100%;
+}
+
+.ablation-subsection .table-container {
+  overflow-x: auto;
+}
+
+#ablations .table caption {
+  caption-side: top;
+  text-align: left;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}

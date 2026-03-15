@@ -2,25 +2,48 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta name="description"
-        content="DAVIS: a planning agent with knowledge graph-powered inner monologue for interactive scientific reasoning (Findings of EMNLP 2025).">
-  <meta name="keywords" content="DAVIS">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>DAVIS: Planning Agent with Knowledge Graph-Powered Inner Monologue</title>
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
+  <title>DAVIS: Planning Agent with Knowledge Graph-Powered Inner Monologue | EMNLP 2025</title>
 
-    function gtag() {
-      dataLayer.push(arguments);
-    }
+  <meta name="description"
+        content="DAVIS is a planning agent with knowledge graph-powered inner monologue for interactive scientific reasoning. Accepted to Findings of EMNLP 2025, DAVIS combines structured temporal memory, agentic retrieval, and model-based planning for ScienceWorld and multi-hop QA.">
 
-    gtag('js', new Date());
+  <meta name="keywords"
+        content="DAVIS, DAVIS EMNLP 2025, Minh Pham-Dinh, knowledge graph agent, planning agent, inner monologue retrieval, scientific reasoning agent, interactive scientific reasoning, agentic retrieval, model-based planning, structured memory, temporal memory, retrieval augmented generation, RAG agent, knowledge graph powered reasoning, ScienceWorld benchmark, HotpotQA, MuSiQueQA, LLM planning agent, AI for scientific reasoning, EMNLP 2025 Findings">
 
-    gtag('config', 'G-PYVRSFMDRL');
-  </script> -->
+  <meta name="author" content="Minh Pham-Dinh, Michael Yankoski, Munira Syed, Trenton Ford">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="canonical" href="https://minhphd.github.io/DAVIS/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="DAVIS: Planning Agent with Knowledge Graph-Powered Inner Monologue">
+  <meta property="og:description" content="Accepted to Findings of EMNLP 2025. DAVIS is a planning agent for interactive scientific reasoning using knowledge graph-powered inner monologue, structured memory, and model-based planning.">
+  <meta property="og:url" content="https://minhphd.github.io/DAVIS/">
+  <meta property="og:site_name" content="DAVIS Project Page">
+  <meta property="og:image" content="https://minhphd.github.io/DAVIS/static/images/main_dia_detailed.png">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="DAVIS: Planning Agent with Knowledge Graph-Powered Inner Monologue">
+  <meta name="twitter:description" content="EMNLP 2025 Findings. DAVIS uses knowledge graph-powered inner monologue, structured memory, and model-based planning for interactive scientific reasoning.">
+  <meta name="twitter:image" content="https://minhphd.github.io/DAVIS/static/images/main_dia_detailed.png">
+
+  <!-- Scholarly / citation metadata -->
+  <meta name="citation_title" content="DAVIS: Planning Agent with Knowledge Graph-Powered Inner Monologue">
+  <meta name="citation_author" content="Minh Pham-Dinh">
+  <meta name="citation_author" content="Michael G. Yankoski">
+  <meta name="citation_author" content="Munira Syed">
+  <meta name="citation_author" content="Trenton W. Ford">
+  <meta name="citation_publication_date" content="2025/11">
+  <meta name="citation_conference_title" content="Findings of the Association for Computational Linguistics: EMNLP 2025">
+  <meta name="citation_pdf_url" content="https://aclanthology.org/2025.findings-emnlp.895.pdf">
+  <meta name="citation_public_url" content="https://aclanthology.org/2025.findings-emnlp.895/">
+  <meta name="citation_doi" content="10.18653/v1/2025.findings-emnlp.895">
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
         rel="stylesheet">
@@ -176,9 +199,9 @@
 <section class="hero teaser">
     <!-- Paper video. -->
   <div class="columns is-centered has-text-centered">
-    <div class="column is-four-fifths">
+    <div class="column is-two-thirds">
       <h2 class="title is-3">Presentation</h2>
-      <div class="publication-video">
+      <div class="publication-video is-max-desktop">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/mkNJJXu1Wug" title="" frameBorder="1"   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  allowFullScreen><br>Powered by <a href="https://youtubeembedcode.com">youtube embed code</a> and <a href="https://starburstnotongamstop.org/">starburst not on gamstop</a></iframe>
       </div>
     </div>
@@ -224,7 +247,7 @@
 </section>
 
 <section class="section" id="results">
-  <div class="container is-max-desktop">
+  <div class="container is-max-widescreen">
     <div class="columns is-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3 has-text-centered">Results</h2>
@@ -314,150 +337,149 @@
           </div>
         </div>
 
-        <!-- Ablations -->
-        <!-- Ablations -->
-        <div class="plot-card" id="ablations">
-          <h3 class="title is-5">Ablation Studies</h3>
+<div class="plot-card" id="ablations">
+  <h3 class="title is-5">Ablation Studies</h3>
 
-          <p class="plot-caption">
-            We study the contribution of the <b>World Model</b> and the <b>Actor–Critic components</b>
-            to DAVIS’s performance on ScienceWorld tasks of varying difficulty.
-          </p>
+  <p class="plot-caption">
+    We study the contribution of the <b>World Model</b> and the <b>Actor–Critic components</b>
+    to DAVIS’s performance on ScienceWorld tasks of varying difficulty.
+  </p>
 
-          <!-- World Model Ablation -->
-          <div class="ablation-subsection">
-            <h4 class="title is-6">Effect of World Model (WM)</h4>
+  <div class="columns is-variable is-6 ablation-columns">
+    <!-- World Model Ablation -->
+    <div class="column is-6">
+      <div class="ablation-subsection">
+        <h4 class="title is-6">Effect of World Model (WM)</h4>
 
+        <div class="table-container wm-table">
+          <table class="table is-fullwidth is-striped">
+            <caption>
+              <b>Table 1:</b> DAVIS performance with World Model (D+W) and without World Model (D).
+            </caption>
+            <thead>
+              <tr>
+                <th>Task</th>
+                <th class="has-text-centered">D</th>
+                <th class="has-text-centered">D + W</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="task-group">
+                <td colspan="3"><b>Long Tasks</b></td>
+              </tr>
+              <tr>
+                <td>Melt (1-2)</td>
+                <td class="has-text-centered">3.00</td>
+                <td class="has-text-centered"><b>70.00</b></td>
+              </tr>
+              <tr>
+                <td>Determine Melting Point Unk. (2-3)</td>
+                <td class="has-text-centered">5.00</td>
+                <td class="has-text-centered"><b>92.33</b></td>
+              </tr>
 
-            <!-- Table 1 goes here -->
-            <div class="table-container wm-table">
-              <table class="table is-fullwidth">
-                <caption>
-                  <b>Table 1:</b> DAVIS performance with World Model (D+W) and without World Model (D).
-                </caption>
-                <thead>
-                  <tr>
-                    <th>Task</th>
-                    <th class="has-text-centered">D</th>
-                    <th class="has-text-centered">D + W</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr class="task-group">
-                    <td colspan="3"><b>Long Tasks</b></td>
-                  </tr>
-                  <tr>
-                    <td>Melt (1-2)</td>
-                    <td class="has-text-centered">3.00</td>
-                    <td class="has-text-centered"><b>70.00</b></td>
-                  </tr>
-                  <tr>
-                    <td>Determine Melting Point Unk. (2-3)</td>
-                    <td class="has-text-centered">5.00</td>
-                    <td class="has-text-centered"><b>92.33</b></td>
-                  </tr>
+              <tr class="task-group">
+                <td colspan="3"><b>Medium Tasks</b></td>
+              </tr>
+              <tr>
+                <td>Mix Paint Secondary (6-1)</td>
+                <td class="has-text-centered">40.00</td>
+                <td class="has-text-centered">36.37</td>
+              </tr>
+              <tr>
+                <td>Test Conductivity (3-3)</td>
+                <td class="has-text-centered">55.00</td>
+                <td class="has-text-centered"><b>58.33</b></td>
+              </tr>
 
-                  <tr class="task-group">
-                    <td colspan="3"><b>Medium Tasks</b></td>
-                  </tr>
-                  <tr>
-                    <td>Mix Paint Secondary (6-1)</td>
-                    <td class="has-text-centered">40.00</td>
-                    <td class="has-text-centered">36.37</td>
-                  </tr>
-                  <tr>
-                    <td>Test Conductivity (3-3)</td>
-                    <td class="has-text-centered">55.00</td>
-                    <td class="has-text-centered"><b>58.33</b></td>
-                  </tr>
-
-                  <tr class="task-group">
-                    <td colspan="3"><b>Short Tasks</b></td>
-                  </tr>
-                  <tr>
-                    <td>Lifespan Longest-Lived (7-1)</td>
-                    <td class="has-text-centered">66.67</td>
-                    <td class="has-text-centered"><b>100.00</b></td>
-                  </tr>
-                  <tr>
-                    <td>Find Living Thing (4-1)</td>
-                    <td class="has-text-centered">25.00</td>
-                    <td class="has-text-centered"><b>100.00</b></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-
-          </div>
-
-          <!-- Actor / Critic Ablation -->
-          <div class="ablation-subsection">
-            <h4 class="title is-6">Actor–Critic Ablation</h4>
-
-            <div class="table-container wm-table">
-              <table class="table is-fullwidth">
-                <caption>
-                  <b>Table 2:</b> Ablation study: Full model (D+W), without Actor (D-A), and without Critic (D-C).
-                  Values are success rate (%), with average steps in parentheses.
-                </caption>
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Task</th>
-                    <th class="has-text-centered">D + W</th>
-                    <th class="has-text-centered">D - A</th>
-                    <th class="has-text-centered">D - C</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr class="task-group">
-                    <td rowspan="2"><b>Long</b></td>
-                    <td>1-2</td>
-                    <td class="has-text-centered"><b>70.0</b> (4.38)</td>
-                    <td class="has-text-centered">25.0 (1.12)</td>
-                    <td class="has-text-centered">23.3 (3.20)</td>
-                  </tr>
-                  <tr>
-                    <td>2-3</td>
-                    <td class="has-text-centered"><b>92.3</b> (1.51)</td>
-                    <td class="has-text-centered">79.7 (1.19)</td>
-                    <td class="has-text-centered">33.3 (1.29)</td>
-                  </tr>
-
-                  <tr class="task-group">
-                    <td rowspan="2"><b>Medium</b></td>
-                    <td>6-1</td>
-                    <td class="has-text-centered">36.4 (3.22)</td>
-                    <td class="has-text-centered"><b>100.0</b> (1.49)</td>
-                    <td class="has-text-centered">86.0 (2.49)</td>
-                  </tr>
-                  <tr>
-                    <td>3-3</td>
-                    <td class="has-text-centered"><b>58.3</b> (2.71)</td>
-                    <td class="has-text-centered">28.0 (1.32)</td>
-                    <td class="has-text-centered">49.3 (1.72)</td>
-                  </tr>
-
-                  <tr class="task-group">
-                    <td rowspan="2"><b>Short</b></td>
-                    <td>7-1</td>
-                    <td class="has-text-centered"><b>83.3</b> (2.00)</td>
-                    <td class="has-text-centered">66.7 (2.00)</td>
-                    <td class="has-text-centered">83.3 (2.00)</td>
-                  </tr>
-                  <tr>
-                    <td>4-1</td>
-                    <td class="has-text-centered"><b>100.0</b> (2.50)</td>
-                    <td class="has-text-centered">44.7 (2.94)</td>
-                    <td class="has-text-centered">25.0 (2.50)</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-
-          </div>
+              <tr class="task-group">
+                <td colspan="3"><b>Short Tasks</b></td>
+              </tr>
+              <tr>
+                <td>Lifespan Longest-Lived (7-1)</td>
+                <td class="has-text-centered">66.67</td>
+                <td class="has-text-centered"><b>100.00</b></td>
+              </tr>
+              <tr>
+                <td>Find Living Thing (4-1)</td>
+                <td class="has-text-centered">25.00</td>
+                <td class="has-text-centered"><b>100.00</b></td>
+              </tr>
+            </tbody>
+          </table>
         </div>
+      </div>
+    </div>
 
+    <!-- Actor / Critic Ablation -->
+    <div class="column is-6">
+      <div class="ablation-subsection">
+        <h4 class="title is-6">Actor–Critic Ablation</h4>
+
+        <div class="table-container wm-table">
+          <table class="table is-fullwidth is-striped">
+            <caption>
+              <b>Table 2:</b> Ablation study: Full model (D+W), without Actor (D-A), and without Critic (D-C).
+              Values are success rate (%), with average steps in parentheses.
+            </caption>
+            <thead>
+              <tr>
+                <th>Type</th>
+                <th>Task</th>
+                <th class="has-text-centered">D + W</th>
+                <th class="has-text-centered">D - A</th>
+                <th class="has-text-centered">D - C</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="task-group">
+                <td rowspan="2"><b>Long</b></td>
+                <td>1-2</td>
+                <td class="has-text-centered"><b>70.0</b> (4.38)</td>
+                <td class="has-text-centered">25.0 (1.12)</td>
+                <td class="has-text-centered">23.3 (3.20)</td>
+              </tr>
+              <tr>
+                <td>2-3</td>
+                <td class="has-text-centered"><b>92.3</b> (1.51)</td>
+                <td class="has-text-centered">79.7 (1.19)</td>
+                <td class="has-text-centered">33.3 (1.29)</td>
+              </tr>
+
+              <tr class="task-group">
+                <td rowspan="2"><b>Medium</b></td>
+                <td>6-1</td>
+                <td class="has-text-centered">36.4 (3.22)</td>
+                <td class="has-text-centered"><b>100.0</b> (1.49)</td>
+                <td class="has-text-centered">86.0 (2.49)</td>
+              </tr>
+              <tr>
+                <td>3-3</td>
+                <td class="has-text-centered"><b>58.3</b> (2.71)</td>
+                <td class="has-text-centered">28.0 (1.32)</td>
+                <td class="has-text-centered">49.3 (1.72)</td>
+              </tr>
+
+              <tr class="task-group">
+                <td rowspan="2"><b>Short</b></td>
+                <td>7-1</td>
+                <td class="has-text-centered"><b>83.3</b> (2.00)</td>
+                <td class="has-text-centered">66.7 (2.00)</td>
+                <td class="has-text-centered">83.3 (2.00)</td>
+              </tr>
+              <tr>
+                <td>4-1</td>
+                <td class="has-text-centered"><b>100.0</b> (2.50)</td>
+                <td class="has-text-centered">44.7 (2.94)</td>
+                <td class="has-text-centered">25.0 (2.50)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
       </div>
     </div>
