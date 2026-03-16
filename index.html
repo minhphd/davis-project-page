@@ -7,16 +7,16 @@
   <title>DAVIS: Planning Agent with Knowledge Graph-Powered Inner Monologue | EMNLP 2025</title>
 
   <meta name="description"
-        content="DAVIS is a planning agent with knowledge graph-powered inner monologue for interactive scientific reasoning. Accepted to Findings of EMNLP 2025, DAVIS combines structured temporal memory, agentic retrieval, and model-based planning for ScienceWorld and multi-hop QA.">
+        content="Learn about DAVIS, a planning agent that uses a knowledge‑graph world model, structured memory and an inner‑monologue retrieval loop for interactive scientific reasoning.">
 
   <meta name="keywords"
-        content="DAVIS, DAVIS EMNLP 2025, Minh Pham-Dinh, knowledge graph agent, planning agent, inner monologue retrieval, scientific reasoning agent, interactive scientific reasoning, agentic retrieval, model-based planning, structured memory, temporal memory, retrieval augmented generation, RAG agent, knowledge graph powered reasoning, ScienceWorld benchmark, HotpotQA, MuSiQueQA, LLM planning agent, AI for scientific reasoning, EMNLP 2025 Findings">
+        content="DAVIS, planning agent, knowledge‑graph agent, inner‑monologue retrieval, scientific reasoning">
 
   <meta name="author" content="Minh Pham-Dinh, Michael Yankoski, Munira Syed, Trenton Ford">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#ffffff">
 
-  <link rel="canonical" href="https://minhphd.github.io/DAVIS/">
+  <link rel="canonical" href="https://minhphd.github.io/davis-project-page/">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
@@ -62,6 +62,92 @@
   <script src="./static/js/bulma-carousel.min.js"></script>
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "@id": "https://minhphd.github.io/davis-project-page/#article",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://minhphd.github.io/davis-project-page/"
+    },
+    "headline": "DAVIS: Planning Agent with Knowledge Graph-Powered Inner Monologue",
+    "name": "DAVIS: Planning Agent with Knowledge Graph-Powered Inner Monologue",
+    "description": "DAVIS is a planning agent for interactive scientific reasoning that combines knowledge graph-powered inner monologue, structured temporal memory, agentic retrieval, and model-based planning.",
+    "author": [
+      {
+        "@type": "Person",
+        "name": "Minh Pham-Dinh",
+        "url": "https://minhphd.github.io/"
+      },
+      {
+        "@type": "Person",
+        "name": "Michael G. Yankoski"
+      },
+      {
+        "@type": "Person",
+        "name": "Munira Syed"
+      },
+      {
+        "@type": "Person",
+        "name": "Trenton W. Ford"
+      }
+    ],
+    "publisher": {
+      "@type": "Organization",
+      "name": "Association for Computational Linguistics",
+      "url": "https://www.aclweb.org/"
+    },
+    "isPartOf": {
+      "@type": "PublicationIssue",
+      "name": "Findings of the Association for Computational Linguistics: EMNLP 2025"
+    },
+    "datePublished": "2025-11",
+    "inLanguage": "en",
+    "url": "https://minhphd.github.io/davis-project-page/",
+    "sameAs": [
+      "https://aclanthology.org/2025.findings-emnlp.895/",
+      "https://aclanthology.org/2025.findings-emnlp.895.pdf",
+      "https://arxiv.org/abs/2410.09252",
+      "https://github.com/minhphd/DAVIS"
+    ],
+    "identifier": [
+      {
+        "@type": "PropertyValue",
+        "propertyID": "DOI",
+        "value": "10.18653/v1/2025.findings-emnlp.895"
+      }
+    ],
+    "about": [
+      "knowledge graphs",
+      "interactive scientific reasoning",
+      "agentic retrieval",
+      "model-based planning",
+      "large language models",
+      "ScienceWorld",
+      "HotpotQA",
+      "MuSiQueQA"
+    ],
+    "keywords": [
+      "DAVIS",
+      "knowledge graph agent",
+      "planning agent",
+      "inner monologue retrieval",
+      "interactive scientific reasoning",
+      "ScienceWorld",
+      "HotpotQA",
+      "MuSiQueQA",
+      "EMNLP 2025"
+    ],
+    "image": [
+      "https://minhphd.github.io/davis-project-page/static/images/main_dia_detailed.png",
+      "https://minhphd.github.io/davis-project-page/static/images/inner_monologue.png"
+    ],
+    "abstract": "Designing a generalist scientific agent capable of performing tasks in laboratory settings to assist researchers has become a key goal in recent Artificial Intelligence research. DAVIS incorporates structured and temporal memory for model-based planning and an agentic multi-turn retrieval system, similar to a human inner monologue, enabling improved reasoning over past experiences.",
+    "isAccessibleForFree": true
+  }
+  </script>
+
 </head>
 <body>
 
@@ -228,14 +314,14 @@
     <div class="hero-body">
       <div class="columns is-centered is-vcentered">
         <div class="column is-8 has-text-centered">
-          <img id="teaser" src="./static/images/main_dia_detailed.png" alt="Teaser Image" >
+          <img id="teaser" src="./static/images/main_dia_detailed.png" alt="Diagram showing DAVIS world model, inner monologue retrieval, and actor–critic modules" >
           <h2 class="subtitle">
             <span class="dnerf">DAVIS</span> enables planning for interactive scientific reasoning tasks via
             knowledge-graph memory and an inner-monologue retrieval loop.
           </h2>
         </div>
         <div class="column is-4 has-text-centered">
-          <img id="inner-monologue" src="./static/images/inner_monologue.png" alt="Inner Monologue Image" >
+          <img id="inner-monologue" src="./static/images/inner_monologue.png" alt="Illustration of DAVIS inner‑monologue retrieval loop" >
           <h2 class="subtitle">
             Inner Monologue.
           </h2>
@@ -259,7 +345,7 @@
             DAVIS improves performance across <b>8/9</b> ScienceWorld subjects compared to prior work.
           </p>
           <figure class="plot">
-            <img src="./static/images/plots/per_subject.png" alt="ScienceWorld results by subject">
+            <img src="./static/images/plots/per_subject.png" alt="Bar chart comparing ScienceWorld subjects for DAVIS and baseline models">
             <figcaption>Per-subject breakdown.</figcaption>
           </figure>
         </div>
